@@ -157,3 +157,24 @@ header {
   display: block;
   list-style: none;
 }
+
+footer {
+  background-color: #1b1111;
+  width: 100%;
+}
+footer ul {
+  list-style: none;
+  width: 100%;
+}
+footer ul li {
+  display: inline-block;
+}
+footer ul li a {
+  color: #fff;
+  float: left;
+  margin: 20px 30px;
+  text-decoration: none;
+}
+footer ul li:last-child {
+  float: right;
+}
