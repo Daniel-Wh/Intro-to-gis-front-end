@@ -6,20 +6,53 @@ const base = {
   dateSection: document.getElementById("important-dates"),
 };
 
-base.homeTab.addEventListener("click", () =>
-  console.log("home button clicked")
-);
+let state = {
+  tab: "home",
+};
 
-base.tutorialsTab.addEventListener(
-  "click",
-  () => (base.dateSection.style.display = "none")
-);
+const changeTab = (tab) => {
+  if (state.page !== tab) {
+    // first see what the current state is to remove
+    switch (state.page) {
+      case "home":
+        homeView.removeHomeBoxes();
+        break;
+      case "data":
+        dataView.closeDataTab();
+        break;
+      case "practice":
+        practiceView.closePracticeTab();
+        break;
+      // remove what's in the practice
+      case "labs":
+        labsView.closeLabsTab();
+        break;
+      // remove whats in labs
+    }
+    switch (tab) {
+      case "home":
+        homeView.addHomeBoxes();
+        break;
+      case "data":
+        dataView.openDataTab();
+        break;
+      case "labs":
+        labsView.openLabsTab();
+        break;
+      // add labs to display
+      case "practice":
+        practiceView.openPracticeTab();
+        break;
+      // add practice to display
+    }
+    state.page = tab;
+  }
+};
 
-base.dataTab.addEventListener(
-  "click",
-  () => (base.dateSection.style.display = "block")
-);
+base.homeTab.addEventListener("click", changeTab("home"));
 
-base.practiceTab.addEventListener("click", () =>
-  console.log("practice clicked")
-);
+base.tutorialsTab.addEventListener("click", changeTab("tutorials"));
+
+base.dataTab.addEventListener("click", "data");
+
+base.practiceTab.addEventListener("click", changeTab("practice"));

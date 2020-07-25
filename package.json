@@ -1,0 +1,33 @@
+{
+  "name": "gis-site",
+  "version": "1.0.0",
+  "description": "Web app built to deliver educational materials",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Daniel-Wh/Intro-to-gis-front-end.git"
+  },
+  "author": "Daniel Whitney",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Daniel-Wh/Intro-to-gis-front-end/issues"
+  },
+  "homepage": "https://github.com/Daniel-Wh/Intro-to-gis-front-end#readme",
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "html-webpack-plugin": "^4.3.0",
+    "webpack": "^4.44.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "babel-loader": "^8.1.0",
+    "babel-polyfill": "^6.26.0",
+    "core-js": "^3.6.5"
+  }
+}
