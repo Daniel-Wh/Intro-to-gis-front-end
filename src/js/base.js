@@ -1,4 +1,5 @@
 export const elements = {
+  title: document.getElementById("title"),
   homeTab: document.getElementById("home-header"),
   tutorialsTab: document.getElementById("tutorials-header"),
   dataTab: document.getElementById("data-header"),

@@ -85,20 +85,20 @@ header {
   margin-top: 25px;
 }
 
-.main-nav li a:link,
-.main-nav li a:visited {
+.main-nav li a {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 90%;
   padding: 8px 0;
-  border-bottom: 2px solid transparent;
+  /* border-bottom: 2px solid transparent; */
   transition: border-bottom 0.2s;
 }
 .main-nav li a:hover,
 .main-nav li a:active,
 footer li a:active,
-footer li a:hover {
+footer li a:hover,
+.activeTab {
   border-bottom: 2px solid #e67e22;
 }
 .site-howto {
