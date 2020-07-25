@@ -193,3 +193,13 @@ footer ul li a {
 footer ul li:last-child {
   float: right;
 }
+
+footer small {
+  color: #fff;
+  position: relative;
+  bottom: 10px;
+}
+footer small a {
+  color: inherit;
+  text-decoration: none;
+}
