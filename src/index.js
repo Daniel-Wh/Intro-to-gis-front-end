@@ -1,52 +1,62 @@
-import { elements } from "./js/base";
+import { elements } from "../src/js/base";
+import * as homeView from "../src/js/views/homeview";
 
 let state = {
   tab: "home",
 };
 
-const changeTab = (tab) => {
+function changeTab(tab) {
+  console.log("change tab called");
   if (state.page !== tab) {
     // first see what the current state is to remove
     switch (state.page) {
       case "home":
-        homeView.removeHomeBoxes();
+        homeView.removeSections();
         break;
       case "data":
-        dataView.closeDataTab();
+        // dataView.closeDataTab();
         break;
       case "practice":
-        practiceView.closePracticeTab();
+        // practiceView.closePracticeTab();
         break;
       // remove what's in the practice
-      case "labs":
-        labsView.closeLabsTab();
+      case "tutorials":
+        // labsView.closeLabsTab();
         break;
       // remove whats in labs
     }
     switch (tab) {
       case "home":
-        homeView.addHomeBoxes();
+        homeView.addSections();
         break;
       case "data":
-        dataView.openDataTab();
+        // dataView.openDataTab();
         break;
-      case "labs":
-        labsView.openLabsTab();
+      case "tutorials":
+        // labsView.openLabsTab();
         break;
       // add labs to display
       case "practice":
-        practiceView.openPracticeTab();
+        // practiceView.openPracticeTab();
         break;
       // add practice to display
     }
     state.page = tab;
   }
-};
+}
 
-elements.homeTab.addEventListener("click", changeTab("home"));
+elements.homeTab.addEventListener("click", () => {
+  changeTab("home");
+});
 
-elements.tutorialsTab.addEventListener("click", changeTab("tutorials"));
+elements.tutorialsTab.addEventListener("click", () => {
+  changeTab("tutorials");
+});
 
-elements.dataTab.addEventListener("click", "data");
+elements.dataTab.addEventListener("click", () => {
+  changeTab("data");
+});
 
-elements.practiceTab.addEventListener("click", changeTab("practice"));
+elements.practiceTab.addEventListener("click", () => {
+  changeTab("practice");
+});

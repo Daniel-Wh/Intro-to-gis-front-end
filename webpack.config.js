@@ -8,11 +8,11 @@ module.exports = {
     filename: "bundle.js",
   },
   devServer: {
-    contentBase: "./src",
+    contentBase: "./src/",
   },
   plugins: [
     new HtmlWebpackPlugin({
-      filename: "./src/index.html",
+      filename: "index.html",
       template: "./src/index.html",
     }),
   ],

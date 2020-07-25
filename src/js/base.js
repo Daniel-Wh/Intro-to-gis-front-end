@@ -4,4 +4,6 @@ export const elements = {
   dataTab: document.getElementById("data-header"),
   practiceTab: document.getElementById("practice-header"),
   dateSection: document.getElementById("important-dates"),
+  howToSection: document.getElementById("site-howto"),
+  introductionSection: document.getElementById("get-to-know"),
 };
