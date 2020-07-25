@@ -2,7 +2,7 @@ import { elements } from "../src/js/base";
 import * as homeView from "../src/js/views/homeview";
 
 let state = {
-  tab: "home",
+  page: "home",
 };
 
 function changeTab(tab) {
@@ -44,6 +44,10 @@ function changeTab(tab) {
     state.page = tab;
   }
 }
+
+window.addEventListener("load", () => {
+  changeTab("home");
+});
 
 elements.homeTab.addEventListener("click", () => {
   changeTab("home");

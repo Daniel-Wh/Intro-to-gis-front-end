@@ -103,9 +103,11 @@ footer li a:hover {
 }
 .site-howto {
   padding-bottom: 90px;
+  transition: display 0.2s;
 }
 /* *********************** */
 /* GET TO KNOW SECTION */
+
 .get-to-know {
   /* background-color: #f3f3f3; */
   color: #fff;
@@ -114,6 +116,7 @@ footer li a:hover {
     url(img/supportimg.jpg);
   background-attachment: fixed;
   padding-bottom: 40px;
+  transition: display 0.2s;
 }
 
 .get-to-know h3 {
@@ -122,6 +125,9 @@ footer li a:hover {
 }
 /* *********************** */
 /* IMPORTANT DATES AND INFO*/
+.important-dates {
+  transition: display 0.2s;
+}
 .lab-hours {
   margin-top: 30px;
   margin-right: 10px;
