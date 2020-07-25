@@ -1,10 +1,4 @@
-const base = {
-  homeTab: document.getElementById("home-header"),
-  tutorialsTab: document.getElementById("tutorials-header"),
-  dataTab: document.getElementById("data-header"),
-  practiceTab: document.getElementById("practice-header"),
-  dateSection: document.getElementById("important-dates"),
-};
+import { elements } from "./js/base";
 
 let state = {
   tab: "home",
@@ -49,10 +43,10 @@ const changeTab = (tab) => {
   }
 };
 
-base.homeTab.addEventListener("click", changeTab("home"));
+elements.homeTab.addEventListener("click", changeTab("home"));
 
-base.tutorialsTab.addEventListener("click", changeTab("tutorials"));
+elements.tutorialsTab.addEventListener("click", changeTab("tutorials"));
 
-base.dataTab.addEventListener("click", "data");
+elements.dataTab.addEventListener("click", "data");
 
-base.practiceTab.addEventListener("click", changeTab("practice"));
+elements.practiceTab.addEventListener("click", changeTab("practice"));
