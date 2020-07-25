@@ -8,4 +8,5 @@ export const elements = {
   howToSection: document.getElementById("site-howto"),
   introductionSection: document.getElementById("get-to-know"),
   tutorialsIntroSection: document.getElementById("tutorials-intro"),
+  tutorialsVideosSection: document.getElementById("tutorials-videos"),
 };
