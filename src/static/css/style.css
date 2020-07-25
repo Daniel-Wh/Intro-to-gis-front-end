@@ -159,6 +159,9 @@ footer li a:hover {
   display: block;
   list-style: none;
 }
+.dates ul li p {
+  padding-left: 25%;
+}
 
 footer {
   background-color: #1b1111;

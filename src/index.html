@@ -10,16 +10,24 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap"
       rel="stylesheet"
     />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"
+    ></script>
     <title>Intro to Environmental GIS</title>
   </head>
   <body>
     <header>
       <div class="row">
         <ul class="main-nav">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Tutorials</a></li>
-          <li><a href="#">Data</a></li>
-          <li><a href="#">Practice</a></li>
+          <li><a href="#" id="home-header">Home</a></li>
+          <li><a href="#" id="tutorials-header">Tutorials</a></li>
+          <li><a href="#" id="data-header">Data</a></li>
+          <li><a href="#" id="practice-header">Practice</a></li>
         </ul>
       </div>
       <div class="header-text-box">
@@ -72,7 +80,7 @@
         </div>
       </div>
     </section>
-    <section class="important-dates">
+    <section class="important-dates" id="important-dates">
       <div class="row">
         <h2>Important Dates and information</h2>
         <p>
@@ -100,7 +108,7 @@
             <ion-icon class="calendar-icon" name="today-outline"></ion-icon>
             <ul class="dates-list" id="dates-list">
               <li><p>8/24: Class Starts</p></li>
-              <li><p>9/2: Last day to add classes</p></li>
+              <li><p>9/02: Last day to add classes</p></li>
               <li><p>9/29: Last day to drop without record</p></li>
               <li><p>8/24: Other important dates</p></li>
               <li><p>8/24: Class Starts</p></li>
@@ -121,6 +129,7 @@
         </ul>
       </div>
     </footer>
-    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="script.js"></script>
+    <!-- <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script> -->
   </body>
 </html>
