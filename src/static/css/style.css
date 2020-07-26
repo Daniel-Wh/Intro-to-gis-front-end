@@ -17,6 +17,9 @@ html {
 }
 /* *********************** */
 /* REUSABLE COMPONENTS */
+html {
+  scroll-behavior: smooth;
+}
 h1,
 h2,
 h3 {
@@ -208,6 +211,9 @@ footer small a {
 
 /* *********************** */
 /* Tutorials */
+.tutorials-intro {
+  background-color: #f4f4f4;
+}
 
 .tutorials-videos {
   padding-bottom: 80px;

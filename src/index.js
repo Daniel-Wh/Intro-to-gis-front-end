@@ -66,3 +66,19 @@ elements.dataTab.addEventListener("click", () => {
 elements.practiceTab.addEventListener("click", () => {
   changeTab("practice");
 });
+elements.homeFooter.addEventListener("click", () => {
+  changeTab("home");
+  document.documentElement.scrollTop = 0;
+});
+elements.tutorialsFooter.addEventListener("click", () => {
+  changeTab("tutorials");
+  document.documentElement.scrollTop = 0;
+});
+elements.dataFooter.addEventListener("click", () => {
+  changeTab("data");
+  document.documentElement.scrollTop = 0;
+});
+elements.practiceFooter.addEventListener("click", () => {
+  changeTab("practice");
+  document.documentElement.scrollTop = 0;
+});
