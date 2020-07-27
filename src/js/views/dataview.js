@@ -6,12 +6,14 @@ let dataAdded = false;
 export const removeSections = () => {
   elements.dataSectionIntro.style.display = "none";
   elements.dataSectionLinks.style.display = "none";
+  elements.dataSectionInput.style.display = "none";
   elements.dataTab.classList.remove("activeTab");
 };
 
 export const addSections = () => {
   elements.dataSectionIntro.style.display = "block";
   elements.dataSectionLinks.style.display = "block";
+  elements.dataSectionInput.style.display = "block";
   if (!dataAdded) {
     const data = dataLinks.data;
     data.forEach((obj, index) => {

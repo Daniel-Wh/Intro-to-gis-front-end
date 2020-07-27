@@ -16,4 +16,6 @@ export const elements = {
   dataSectionIntro: document.getElementById("data-section-intro"),
   dataLinksUL: document.getElementById("data-links-ul"),
   dataSectionLinks: document.getElementById("data-section-links"),
+  dataSubmitted: document.getElementById("data-submitted"),
+  dataSectionInput: document.getElementById("data-section-input"),
 };
