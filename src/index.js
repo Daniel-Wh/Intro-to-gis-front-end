@@ -1,6 +1,7 @@
 import { elements } from "../src/js/base";
 import * as homeView from "../src/js/views/homeview";
 import * as tutorialsView from "../src/js/views/tutorialsview";
+import * as dataView from "../src/js/views/dataview";
 
 let state = {
   page: "home",
@@ -15,7 +16,7 @@ function changeTab(tab) {
         homeView.removeSections();
         break;
       case "data":
-        // dataView.closeDataTab();
+        dataView.removeSections();
         break;
       case "practice":
         // practiceView.closePracticeTab();
@@ -31,7 +32,7 @@ function changeTab(tab) {
         homeView.addSections();
         break;
       case "data":
-        // dataView.openDataTab();
+        dataView.addSections();
         break;
       case "tutorials":
         tutorialsView.addSections();
@@ -49,6 +50,7 @@ function changeTab(tab) {
 window.addEventListener("load", () => {
   changeTab("home");
   tutorialsView.removeSections();
+  dataView.removeSections();
 });
 
 elements.homeTab.addEventListener("click", () => {

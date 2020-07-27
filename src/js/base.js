@@ -13,4 +13,7 @@ export const elements = {
   introductionSection: document.getElementById("get-to-know"),
   tutorialsIntroSection: document.getElementById("tutorials-intro"),
   tutorialsVideosSection: document.getElementById("tutorials-videos"),
+  dataSectionIntro: document.getElementById("data-section-intro"),
+  dataLinksUL: document.getElementById("data-links-ul"),
+  dataSectionLinks: document.getElementById("data-section-links"),
 };

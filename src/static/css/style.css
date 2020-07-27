@@ -211,6 +211,7 @@ footer small a {
 
 /* *********************** */
 /* Tutorials */
+
 .tutorials-intro {
   background-color: #f4f4f4;
 }
@@ -257,4 +258,32 @@ footer small a {
   margin-left: 5%;
   border-radius: 5px;
   box-shadow: 5px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* *********************** */
+/* Data */
+
+.data-links {
+  background-color: #f4f4f4;
+}
+
+.data-links ul {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.data-links ul li {
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+  margin: 10px 0;
+  padding: 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.data-links a {
+  color: black;
+  text-decoration: none;
 }
