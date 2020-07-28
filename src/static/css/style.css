@@ -58,6 +58,11 @@ section {
   padding: 80px 0;
 }
 
+p {
+  line-height: 150%;
+  font-size: 110%;
+}
+
 /* *********************** */
 /* HEADER AND NAV */
 header {
@@ -130,6 +135,16 @@ footer li a:hover,
 /* IMPORTANT DATES AND INFO*/
 .important-dates {
   transition: display 0.2s;
+}
+.important-dates p {
+  margin-bottom: 100px;
+}
+.dates-list span {
+  font-weight: bold;
+  margin-right: 20px;
+}
+.dates-list p {
+  margin-bottom: 20px;
 }
 .lab-hours {
   margin-top: 30px;
@@ -277,15 +292,20 @@ footer small a {
   display: flex;
   width: 100%;
   margin: 10px 0;
-  padding: 0;
+  padding: 10px 0;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 
 .data-links a {
-  color: black;
+  color: #e67e22;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.2s;
   text-decoration: none;
+}
+.data-links a:hover {
+  border-bottom: 2px solid #e67e22;
 }
 .data-input {
   background-color: #fff;
