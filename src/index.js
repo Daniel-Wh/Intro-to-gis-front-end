@@ -2,13 +2,13 @@ import { elements } from "../src/js/base";
 import * as homeView from "../src/js/views/homeview";
 import * as tutorialsView from "../src/js/views/tutorialsview";
 import * as dataView from "../src/js/views/dataview";
+import * as practiceView from "../src/js/views/practiceview";
 
 let state = {
   page: "home",
 };
 
 function changeTab(tab) {
-  console.log("change tab called");
   if (state.page !== tab) {
     // first see what the current state is to remove
     switch (state.page) {
@@ -19,7 +19,7 @@ function changeTab(tab) {
         dataView.removeSections();
         break;
       case "practice":
-        // practiceView.closePracticeTab();
+        practiceView.removeSections();
         break;
       // remove what's in the practice
       case "tutorials":
@@ -39,7 +39,7 @@ function changeTab(tab) {
         break;
       // add labs to display
       case "practice":
-        // practiceView.openPracticeTab();
+        practiceView.addSections();
         break;
       // add practice to display
     }
@@ -51,6 +51,7 @@ window.addEventListener("load", () => {
   changeTab("home");
   tutorialsView.removeSections();
   dataView.removeSections();
+  practiceView.removeSections();
 });
 
 elements.homeTab.addEventListener("click", () => {
@@ -83,4 +84,10 @@ elements.dataFooter.addEventListener("click", () => {
 elements.practiceFooter.addEventListener("click", () => {
   changeTab("practice");
   document.documentElement.scrollTop = 0;
+});
+
+// form submit on new data/url
+elements.formSubmitBtn.addEventListener("submit", (e) => {
+  e.preventDefault();
+  dataView.formSubmit();
 });

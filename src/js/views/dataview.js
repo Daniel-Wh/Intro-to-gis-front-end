@@ -32,3 +32,10 @@ export const addLink = (url, description) => {
   elements.dataLinksUL.appendChild(div);
   return div;
 };
+
+export const formSubmit = () => {
+  const url = elements.formURL.value;
+  const desc = elements.formDescription.value;
+  // create data model and async function to push new link/description to database
+  console.log(url, desc);
+};

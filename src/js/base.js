@@ -14,8 +14,12 @@ export const elements = {
   tutorialsIntroSection: document.getElementById("tutorials-intro"),
   tutorialsVideosSection: document.getElementById("tutorials-videos"),
   dataSectionIntro: document.getElementById("data-section-intro"),
+  practiceSectionIntro: document.getElementById("section-practice-intro"),
   dataLinksUL: document.getElementById("data-links-ul"),
   dataSectionLinks: document.getElementById("data-section-links"),
   dataSubmitted: document.getElementById("data-submitted"),
   dataSectionInput: document.getElementById("data-section-input"),
+  formURL: document.getElementById("data-link-url"),
+  formDescription: document.getElementById("url-description"),
+  formSubmitBtn: document.getElementById("data-input-form"),
 };
