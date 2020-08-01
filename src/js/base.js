@@ -15,6 +15,7 @@ export const elements = {
   tutorialsVideosSection: document.getElementById("tutorials-videos"),
   dataSectionIntro: document.getElementById("data-section-intro"),
   practiceSectionIntro: document.getElementById("section-practice-intro"),
+  practiceSectionLabs: document.getElementById("section-practice-labs"),
   dataLinksUL: document.getElementById("data-links-ul"),
   dataSectionLinks: document.getElementById("data-section-links"),
   dataSubmitted: document.getElementById("data-submitted"),
@@ -22,4 +23,5 @@ export const elements = {
   formURL: document.getElementById("data-link-url"),
   formDescription: document.getElementById("url-description"),
   formSubmitBtn: document.getElementById("data-input-form"),
+  formSuccessNotification: document.getElementById("success-notification"),
 };

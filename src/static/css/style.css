@@ -341,3 +341,20 @@ footer small a {
   color: #f4f4f4;
   cursor: pointer;
 }
+
+.success {
+  color: #e67e22;
+  font-weight: bold;
+  animation: headerClose;
+  animation-duration: opacity 0.6s ease-in-out;
+  animation: headerOpen;
+  animation-duration: opacity 0.6s ease-in-out;
+}
+.hidden {
+  animation: headerClose 0.3s ease-out;
+  opacity: 0;
+}
+.active {
+  animation: headerOpen 0.3s ease-in;
+  opacity: 1;
+}

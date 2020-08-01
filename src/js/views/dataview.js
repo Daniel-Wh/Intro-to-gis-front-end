@@ -38,4 +38,13 @@ export const formSubmit = () => {
   const desc = elements.formDescription.value;
   // create data model and async function to push new link/description to database
   console.log(url, desc);
+  elements.formSuccessNotification.classList.remove("hidden", true);
+  elements.formSuccessNotification.classList.add("active", true);
+  elements.formSuccessNotification.style.opacity = "1";
+
+  setTimeout(() => {
+    elements.formSuccessNotification.classList.remove("active", true);
+    elements.formSuccessNotification.classList.add("hidden", true);
+    elements.formSuccessNotification.style.opacity = "0";
+  }, 3000);
 };
