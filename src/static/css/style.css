@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -357,4 +358,15 @@ footer small a {
 .active {
   animation: headerOpen 0.3s ease-in;
   opacity: 1;
+}
+
+/* *********************** */
+/* Practice */
+
+.practice-section-intro {
+  background-color: #fff;
+}
+
+.practice-section-labs {
+  background-color: #f4f4f4;
 }
