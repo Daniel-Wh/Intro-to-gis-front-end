@@ -16,6 +16,7 @@ export const elements = {
   dataSectionIntro: document.getElementById("data-section-intro"),
   practiceSectionIntro: document.getElementById("section-practice-intro"),
   practiceSectionLabs: document.getElementById("section-practice-labs"),
+  practiceSectionLinks: document.getElementById("section-practice-links"),
   dataLinksUL: document.getElementById("data-links-ul"),
   dataSectionLinks: document.getElementById("data-section-links"),
   dataSubmitted: document.getElementById("data-submitted"),
