@@ -1,5 +1,5 @@
 import { elements } from "../base";
-import { dataLinks } from "../models/dataLinksModel";
+import { dataLinks, linkPost } from "../models/dataLinksModel";
 
 let dataAdded = false;
 
@@ -33,14 +33,18 @@ export const addLink = (url, description) => {
   return div;
 };
 
-export const formSubmit = () => {
+export const formSubmit = async () => {
   const url = elements.formURL.value;
   const desc = elements.formDescription.value;
-  // create data model and async function to push new link/description to database
-  console.log(url, desc);
+  await linkPost(desc, url);
+};
+
+export const linkAddedSuccess = () => {
   elements.formSuccessNotification.classList.remove("hidden", true);
   elements.formSuccessNotification.classList.add("active", true);
   elements.formSuccessNotification.style.opacity = "1";
+  elements.formURL.value = "";
+  elements.formDescription.value = "";
 
   setTimeout(() => {
     elements.formSuccessNotification.classList.remove("active", true);

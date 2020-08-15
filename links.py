@@ -24,8 +24,9 @@ class Links(db.Model):
 
     def json(self):
         return {
-            'description': self.description,
-            'url': self.url
+            'url': self.url,
+            'description': self.description
+
         }
 
     @classmethod

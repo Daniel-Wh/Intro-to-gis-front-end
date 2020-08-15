@@ -3,6 +3,7 @@ import * as homeView from "../src/js/views/homeview";
 import * as tutorialsView from "../src/js/views/tutorialsview";
 import * as dataView from "../src/js/views/dataview";
 import * as practiceView from "../src/js/views/practiceview";
+import * as datalinksModel from "../src/js/models/dataLinksModel";
 
 let state = {
   page: "home",
@@ -52,6 +53,7 @@ window.addEventListener("load", () => {
   tutorialsView.removeSections();
   dataView.removeSections();
   practiceView.removeSections();
+  datalinksModel.linksGet();
 });
 
 elements.homeTab.addEventListener("click", () => {
