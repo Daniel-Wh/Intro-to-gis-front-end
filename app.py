@@ -3,6 +3,7 @@ from flask import Flask, render_template, jsonify
 from flask_restful import Api
 from flask_cors import CORS
 from db import db
+from links import AddLinks, GetLinks
 
 # base flask app settings
 app = Flask(__name__)
@@ -18,9 +19,18 @@ api = Api(app)
 db.init_app(app)
 
 
+@app.before_first_request
+def create_tables():
+    db.create_all()
+
+
 @app.route('/')
 def hello_world():
     return 'Hello World!'
+
+
+api.add_resource(GetLinks, '/getlinks')
+api.add_resource(AddLinks, '/addlinks')
 
 
 if __name__ == '__main__':

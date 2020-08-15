@@ -1,5 +1,5 @@
 from db import db
-from flask_restful import Resource
+from flask_restful import Resource, reqparse
 
 
 class Links(db.Model):
@@ -42,8 +42,20 @@ class Links(db.Model):
         return links
 
 
-class GetCards(Resource):
+class GetLinks(Resource):
 
     def get(self):
         data = Links.get_links()
         return data
+
+
+class AddLinks(Resource):
+
+    def post(self):
+        link_parser = reqparse.RequestParser()
+        link_parser.add_argument('description', type=str)
+        link_parser.add_argument('url', type=str)
+        data = link_parser.parse_args()
+        link = Links(data['url'], data['description'])
+        link.save_to_db()
+        return link.json()
