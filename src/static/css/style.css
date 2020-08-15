@@ -316,6 +316,7 @@ footer small a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border-width: thin;
 }
 .form input {
   text-align: center;
@@ -323,16 +324,19 @@ footer small a {
   padding: 10px 10px;
   margin: 20px auto;
   border-radius: 5px;
+  border-width: thin;
 }
 .form textarea {
   text-align: center;
   outline: none;
   padding: 10px 10px;
   border-radius: 5px;
+  border-width: thin;
 }
 
 .data-input .btn-data-submit {
   outline: none;
+  border-width: thin;
   background-color: #f4f4f4;
   color: black;
 }
