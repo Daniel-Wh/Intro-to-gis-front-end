@@ -5,7 +5,7 @@ export const removeSections = () => {
   elements.howToSection.style.display = "none";
   elements.howToSection.style.display = "none";
   elements.introductionSection.style.display = "none";
-  elements.homeTab.classList.remove("activeTab");
+  // elements.homeTab.classList.remove("activeTab");
 };
 
 export const addSections = () => {
@@ -14,5 +14,5 @@ export const addSections = () => {
   elements.howToSection.style.display = "block";
   elements.howToSection.style.display = "block";
   elements.introductionSection.style.display = "block";
-  elements.homeTab.classList.add("activeTab");
+  // elements.homeTab.classList.add("activeTab");
 };

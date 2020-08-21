@@ -100,7 +100,7 @@ header {
   text-transform: uppercase;
   font-size: 90%;
   padding: 8px 0;
-  /* border-bottom: 2px solid transparent; */
+  border-bottom: 2px solid transparent;
   transition: border-bottom 0.2s;
 }
 .main-nav li a:hover,
@@ -373,4 +373,13 @@ footer small a {
 
 .practice-section-labs {
   background-color: #f4f4f4;
+}
+
+.section-practice-labs .row h3 a:visited,
+.section-practice-labs .row h3 a:active {
+  text-decoration: #e67e22;
+}
+.section-practice-labs .row h3 a {
+  font-weight: 500;
+  color: #1b1111;
 }

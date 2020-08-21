@@ -98,3 +98,8 @@ elements.practiceSectionLab1.addEventListener("click", (e) => {
   e.preventDefault();
   datalinksModel.getLabs("1");
 });
+
+elements.practiceSectionLab2.addEventListener("click", (e) => {
+  e.preventDefault();
+  datalinksModel.getLabs("2");
+});
