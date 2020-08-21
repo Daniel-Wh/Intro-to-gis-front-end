@@ -93,3 +93,8 @@ elements.formSubmitBtn.addEventListener("submit", (e) => {
   e.preventDefault();
   dataView.formSubmit();
 });
+
+elements.practiceSectionLab1.addEventListener("click", (e) => {
+  e.preventDefault();
+  datalinksModel.getLabs("1");
+});
