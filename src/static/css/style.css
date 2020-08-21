@@ -379,7 +379,8 @@ footer small a {
 .section-practice-labs .row h3 a:active {
   text-decoration: #e67e22;
 }
-.section-practice-labs .row h3 a {
+.section-practice-labs .row h3 {
   font-weight: 500;
   color: #1b1111;
+  text-align: center;
 }
