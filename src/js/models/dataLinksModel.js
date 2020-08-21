@@ -49,3 +49,23 @@ export const linkPost = async (description, url) => {
       }
     );
 };
+
+export const getLabs = async (labNumber) => {
+  await axios
+    .get("http://127.0.0.1:5000/getlabs", {
+      lab: labNumber + "",
+    })
+    .then(
+      (response) => {
+        if (response.status === 200) {
+          console.log("yayyyy");
+        }
+      },
+      (error) => {
+        console.log(error);
+        alert(
+          "Uhhh, this is embarassing. Something went wrong. Try again or email whitneyd@southwestern.edu for help"
+        );
+      }
+    );
+};

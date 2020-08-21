@@ -3,7 +3,7 @@ from flask import Flask, render_template, jsonify
 from flask_restful import Api
 from flask_cors import CORS
 from db import db
-from links import AddLinks, GetLinks
+from links import AddLinks, GetLinks, GetLabs
 
 # base flask app settings
 app = Flask(__name__)
@@ -31,7 +31,7 @@ def hello_world():
 
 api.add_resource(GetLinks, '/getlinks')
 api.add_resource(AddLinks, '/addlinks')
-
+api.add_resource(GetLabs, '/getlabs')
 
 if __name__ == '__main__':
     app.run()

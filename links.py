@@ -1,5 +1,9 @@
 from db import db
+
 from flask_restful import Resource, reqparse
+from flask import send_from_directory
+
+UPLOAD_DIRECTORY = "./src/static/"
 
 
 class Links(db.Model):
@@ -60,3 +64,13 @@ class AddLinks(Resource):
         link = Links(data['url'], data['description'])
         link.save_to_db()
         return link.json()
+
+
+class GetLabs(Resource):
+
+    def get(self):
+        link_parser = reqparse.RequestParser()
+        link_parser.add_argument('lab', type=str)
+        args = link_parser.parse_args()
+        print(args['lab'])
+        return send_from_directory(UPLOAD_DIRECTORY, args['lab'] + ".pdf")
