@@ -1,0 +1,90 @@
+/* media queries for responsiveness */
+
+@media only screen and (max-width: 415px) {
+  p {
+    width: 95%;
+    margin-left: 2.5%;
+  }
+  .row {
+    max-width: 375px;
+  }
+  .header-text-box {
+    width: 100%;
+    font-size: 50%;
+    top: 15%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+    left: 0;
+    margin: 0 auto;
+    transform: none;
+  }
+  .main-nav {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    float: none;
+    justify-content: space-evenly;
+  }
+
+  .main-nav li {
+    display: inline-block;
+    margin-left: 0;
+    margin-top: 25px;
+  }
+
+  .main-nav li a {
+    border-bottom: 2px dotted #e67e22;
+  }
+
+  .dates h3 {
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  footer ul li a {
+    margin: 5px 10px;
+  }
+
+  footer ul li:last-child {
+    margin-bottom: -10px;
+  }
+
+  .form input {
+    text-align: left;
+  }
+
+  .form textarea {
+    text-align: left;
+    max-width: 375px;
+  }
+
+  .data-links ul {
+    width: 95%;
+    margin-left: 2.5%;
+  }
+
+  .data-links ul li {
+    font-size: 70%;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .data-links ul li p {
+    display: none;
+  }
+
+  .section-practice-intro {
+    padding: 20px 0;
+  }
+  .section-practice-labs {
+    padding: 10px 0;
+  }
+  .section-practice-labs h3 {
+    padding-top: 20px;
+  }
+}
