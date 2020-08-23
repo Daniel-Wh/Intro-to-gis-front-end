@@ -12,4 +12,4 @@ One of the labs I created is a data scavenger hunt. The students will submit the
 
 ## Progress
 
-The site is was built desktop first as the students will likely use it while in class but I have made it response to Iphone 6/7/8 plus and smaller screens (portrait). The site is still in development but is mostly completed and will be live soon.
+The site was built desktop first as the students will likely use it while in class but I have made it response to Iphone 6/7/8 plus and smaller screens (portrait - max width of 375px). The site is still in development but is mostly completed and will be live soon.
