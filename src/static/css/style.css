@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  max-width: 100%;
 }
 
 html {
@@ -383,4 +384,16 @@ footer small a {
   font-weight: 500;
   color: #1b1111;
   text-align: center;
+}
+
+.section-practice-links {
+  background-color: #fff;
+}
+.section-practice-links h3 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.section-practice-links p {
+  padding-bottom: 15px;
 }
