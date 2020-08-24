@@ -7,8 +7,10 @@ export const dataLinks = {
   elements: [],
 };
 
+const siteurl = "https://intro-to-gis-site.herokuapp.com";
+
 export const linksGet = async () => {
-  await axios.get("http://127.0.0.1:5000/getlinks", {}).then(
+  await axios.get(`${siteurl}/getlinks`, {}).then(
     (response) => {
       if (response.status === 200) {
         response.data.forEach((element) => {
@@ -27,7 +29,7 @@ export const linksGet = async () => {
 
 export const linkPost = async (description, url) => {
   await axios
-    .post("http://127.0.0.1:5000/addlinks", {
+    .post(`${siteurl}/addlinks`, {
       description: description,
       url: url,
     })
@@ -52,7 +54,7 @@ export const linkPost = async (description, url) => {
 
 export const getLabs = (labNumber) => {
   axios({
-    url: `http://127.0.0.1:5000/getlab/${labNumber}`, //your url
+    url: `${siteurl}/getlab/${labNumber}`, //your url
     method: "GET",
     responseType: "blob", // important
   }).then(

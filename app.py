@@ -45,4 +45,5 @@ api.add_resource(GetLinks, '/getlinks')
 api.add_resource(AddLinks, '/addlinks')
 
 if __name__ == '__main__':
+    db.init_app(app)
     app.run()
