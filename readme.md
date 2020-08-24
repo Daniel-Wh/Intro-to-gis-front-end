@@ -1,6 +1,6 @@
 ## Introduction to Environmental GIS
 
-This is a web app built for [Southwestern University's](https://www.southwestern.edu/) Environmental Studies department. As a result of the COVID-19 pandemic, I was granted an independent study to build a site for the Environment Studies department that works to support the upcoming courses in Geograpic Information Systems. The sites guidelines were to include information about the course like lab hours, support staff information, practice labs, and education materials.
+This is a web app built for [Southwestern University's](https://www.southwestern.edu/) Environmental Studies department. As a result of the COVID-19 pandemic, I was granted an independent study to build a site for the Environment Studies department that works to support the upcoming courses in Geographic Information Systems. The sites guidelines were to include information about the course like lab hours, support staff information, practice labs, and education materials.
 
 ## Tutorials
 
