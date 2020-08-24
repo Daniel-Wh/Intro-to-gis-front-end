@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="static/css/grid.css" />
+    <link rel="stylesheet" href="static/css/normalize.css" />
+    <link rel="stylesheet" href="static/css/style.css" />
+    <link rel="stylesheet" href="static/css/queries.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="static/favicon.ico" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"
+    ></script>
+    <title id="title">Intro to Environmental GIS</title>
+  </head>
+  <body>
+    <header>
+      <div class="row">
+        <ul class="main-nav">
+          <li><a href="#home" id="home-header">Home</a></li>
+          <li><a href="#tutorials" id="tutorials-header">Tutorials</a></li>
+          <li><a href="#data" id="data-header">Data</a></li>
+          <li><a href="#practice" id="practice-header">Practice</a></li>
+        </ul>
+      </div>
+      <div class="header-text-box"><h1>getting started with gis</h1></div>
+    </header>
+    <section class="site-howto" id="site-howto">
+      <div class="row">
+        <h2>How to use this site</h2>
+        <p class="long-copy">
+          Welcome to Introduction to Environmental GIS! In addition to in-class
+          instruction, this site is here for you to reference throughout the
+          course. We suggest you look over this page and familiarize yourself
+          with important information from the syllabus, including assignment due
+          dates, lab hours, and lab assistant contact info.
+        </p>
+      </div>
+    </section>
+    <section class="get-to-know" id="get-to-know">
+      <div class="row"><h2>Get to know your support staff</h2></div>
+      <div class="row">
+        <div class="col span-1-of-3">
+          <h3 class="get-to-know-support">
+            <a href="mailto: bknight@southwestern.edu">Brandee Knight</a>
+          </h3>
+          <p>
+            Professor: Brandee graduated from Southwestern in 2015 with a BA in
+            Environmental Studies and has a Masters in Geospatial Technology
+            from the University of Washington Tacoma. She has experience in
+            industry and has been teaching Environmental GIS at Southwestern
+            since Spring 2019.
+          </p>
+        </div>
+        <div class="col span-1-of-3">
+          <h3 class="get-to-know-support">
+            <a href="mailto: horickl@southwestern.edu">Leah Horick</a>
+          </h3>
+          <p>
+            Student T/A: Environmental Studies major, Data Science minor
+            Graduating Spring of '21 Leah has completed this course and this is
+            her second semester as a TA
+          </p>
+        </div>
+        <div class="col span-1-of-3">
+          <h3 class="get-to-know-support">
+            <a href="mailto: whitneyd@southwestern.edu">Daniel Whitney</a>
+          </h3>
+          <p>
+            Student T/A: Computer Science major, Environmental Studies minor
+            graduating Spring of '21. Daniel has completed this course and
+            Advanced GIS. Daniel built this site with input from Brandee and
+            Leah
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="important-dates" id="important-dates">
+      <div class="row">
+        <h2>Important Dates and information</h2>
+        <p>
+          Due to COVID-19, we have had to adapt this course to meet physical
+          distancing requirements. Access to the GIS lab and to your teaching
+          assistants will be limited, so please plan ahead.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col span-1-of-2">
+          <div class="lab-hours">
+            <h3>Lab hours</h3>
+            <ion-icon class="lab-icon" name="laptop-outline"></ion-icon>
+            <p>
+              The GIS lab will be available for student use Sunday through
+              Thursday until 10pm, 8am-6pm on Fridays, and closed Saturday. Only
+              10 students will be allowed in the lab at a time. The TAs will be
+              available remotely to assist.
+            </p>
+          </div>
+        </div>
+        <div class="col span-1-of-2">
+          <div class="dates">
+            <h3>Important Dates</h3>
+            <ion-icon class="calendar-icon" name="today-outline"></ion-icon>
+            <ul class="dates-list" id="dates-list">
+              <li>
+                <p><span>09/07:</span>Group A in class Mondays</p>
+              </li>
+              <li>
+                <p><span>09/09:</span>Group B in class Wednesdays</p>
+              </li>
+              <li>
+                <p><span>09/11:</span>First lab released</p>
+              </li>
+              <li>
+                <p><span>09/18:</span>Second lab released</p>
+              </li>
+              <li>
+                <p><span>09/25:</span>First lab due</p>
+              </li>
+              <li>
+                <p><span>10/02:</span>Second lab due</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="tutorials-intro" id="tutorials-intro">
+      <div class="row">
+        <h2>Getting familar with ArcMap</h2>
+        <p>
+          While this course will familiarize you with broad GIS concepts, most
+          practical application of these concepts will be done through ArcMap.
+          Initially, ArcMap’s many tools and features can be overwhelming, so
+          this page will serve as your reference if you get lost. As you go
+          through the labs in this course, continue to come back to this page
+          for tutorials on the tools that you'll be using. If the tutorial does
+          not answer your question, please reach out to a TA.
+        </p>
+      </div>
+    </section>
+    <section class="tutorials-videos" id="tutorials-videos">
+      <div class="row video-box clearfix">
+        <div class="col span-1-of-2">
+          <iframe
+            width="100%"
+            height="360px"
+            src="https://www.youtube.com/embed/bELj_DMSJvw"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="col span-1-of-2">
+          <div class="row">
+            <h3>Connecting to a folder</h3>
+            <p>
+              Before you can add data to your map, you'll need to connect to the
+              folder the data is stored in
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col span-1-of-2">
+          <div class="row">
+            <h3>Joining Data</h3>
+            <p>
+              This tutorial will cover joining two data sources. This is going
+              to be important to know and use in order to make produce useful
+              maps.
+            </p>
+          </div>
+        </div>
+        <div class="col span-1-of-2">
+          <iframe
+            width="90%"
+            height="360px"
+            src="https://www.youtube.com/embed/SQ3FVutqfXA"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <div class="row video-box clearfix">
+        <div class="col span-1-of-2">
+          <iframe
+            width="100%"
+            height="360px"
+            src="https://www.youtube.com/embed/rjbwUukGOcw"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="col span-1-of-2">
+          <div class="row">
+            <h3>Exporting as a New Source</h3>
+            <p>
+              How to finalize your changes once you've joined some interesting
+              data.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="data-section" id="data-section-intro">
+      <div class="row">
+        <h2>Data repository</h2>
+        <p>
+          One of the challenges in producing insightful maps is obtaining
+          quality data. Throughout this course you will search for, interact
+          with, acquire, and present various points of data. Use this page to
+          store the data sources you come across. It will become increasingly
+          relevant as your final projects come to view.
+        </p>
+      </div>
+    </section>
+    <section class="data-links" id="data-section-links">
+      <div class="row data-row" id="data-row">
+        <ul class="data-links-ul" id="data-links-ul"></ul>
+      </div>
+    </section>
+    <section class="data-input" id="data-section-input">
+      <div class="row"><h2>Submit new data sources</h2></div>
+      <form class="data-input-form" id="data-input-form">
+        <div class="row form">
+          <input
+            type="url"
+            for="link"
+            id="data-link-url"
+            size="50"
+            placeholder="Enter URL"
+            required
+          />
+        </div>
+        <div class="row form">
+          <textarea
+            name="description"
+            id="url-description"
+            class="url-description"
+            cols="51"
+            rows="4"
+            required
+            maxlength="30"
+            placeholder="Your description . . . ."
+          ></textarea>
+        </div>
+        <div class="row form">
+          <input
+            type="submit"
+            id="data-submitted"
+            class="btn-data-submit"
+            maxlength="256"
+            value="send it!"
+          />
+        </div>
+        <div class="row form hidden" id="success-notification">
+          <p class="success">URL successfully submitted!</p>
+        </div>
+      </form>
+    </section>
+    <section class="section-practice-intro" id="section-practice-intro">
+      <div class="row">
+        <h2>How to practice</h2>
+        <p>
+          Getting familiar with operating any new software product requires
+          practice. We've included previous labs for additional experience. If
+          you decide to work through the labs, feel free to reach out to a T/A
+          for feedback or questions. In addition to the labs, below are some
+          helpful links to provide additional resources on important topics you
+          will cover this semester.
+        </p>
+      </div>
+    </section>
+    <section class="section-practice-labs" id="section-practice-labs">
+      <div class="row">
+        <div class="col span-1-of-3">
+          <h3><a href="#" id="lab-1" data-id="1">Mark Your Home</a></h3>
+          <p>
+            This lab is great for practicing connecting to a folder, adding a
+            shapefile to your map in arcmap, and seeing some of the tools you
+            can use later
+          </p>
+        </div>
+        <div class="col span-1-of-3">
+          <h3><a href="#" id="lab-2" data-id="2">Flood risk zone</a></h3>
+          <p>
+            This lab is administered by ESRI and is a great lab to reinforce
+            what you've learned within the first month or so of the cours and
+            give you an opportunity to play with some advanced tools.
+          </p>
+        </div>
+        <div class="col span-1-of-3">
+          <h3><a href="#" id="lab-3">TX Elections</a></h3>
+          <p>
+            This is the lab we used for some of the tutorials. It's great
+            practice for data cleaning, joining data to a shapefile, and
+            applying colors to the results
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section-practice-links" id="section-practice-links">
+      <div class="row"><h2>Helpful Links</h2></div>
+      <div class="row">
+        <div class="col span-1-of-3">
+          <h3>
+            <a
+              href="https://www.esri.com/arcgis-blog/products/arcgis-pro/mapping/gcs_vs_pcs/"
+              >GCS vs PCS</a
+            >
+          </h3>
+          <p>
+            Global coordinate systems vs projected coordinate systems and when
+            to use either.
+          </p>
+        </div>
+        <div class="col span-1-of-3">
+          <h3>
+            <a
+              href="https://csegrecorder.com/articles/view/datums-projections-and-coordinate-systems"
+              >Datums/Projections</a
+            >
+          </h3>
+          <p>
+            Datums, Projections, and Coordinate Systems (good explanation of why
+            you use different projections for different locations)
+          </p>
+        </div>
+        <div class="col span-1-of-3">
+          <h3>
+            <a
+              href="https://learn.arcgis.com/en/projects/choose-the-right-projection/"
+              >Projections</a
+            >
+          </h3>
+          <p>How to choose a projection</p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="row">
+        <ul class="footer-nav">
+          <li><a href="#home" id="footer-home">Home</a></li>
+          <li><a href="#tutorials" id="footer-tutorials">Tutorials</a></li>
+          <li><a href="#data" id="footer-data">Data</a></li>
+          <li><a href="#practice" id="footer-practice">Practice</a></li>
+          <li><a href="mailto: whitneyd@southwestern.edu">Support</a></li>
+        </ul>
+      </div>
+      <small
+        >&copy; Copyright 2020,
+        <a href="https://github.com/Daniel-Wh" target="blank"
+          >Daniel Whitney</a
+        ></small
+      >
+    </footer>
+    <script type="module" src="index.js"></script>
+    <script src="static/bundle.js"></script>
+  </body>
+</html>

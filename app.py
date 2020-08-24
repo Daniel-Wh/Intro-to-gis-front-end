@@ -8,10 +8,11 @@ from links import AddLinks, GetLinks
 # base flask app settings
 app = Flask(__name__)
 cors = CORS(app)
-uri = 'sqlite:///data.db'
+# sqlite for development
+# uri = 'sqlite:///data.db'
 # set for deployment
-# uri = os.environ.get('uri')
-# secret_key = os.environ.get('secret_key')
+uri = os.environ.get('uri')
+secret_key = os.environ.get('secret_key')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SQLALCHEMY_DATABASE_URI'] = uri
 app.config['PROPAGATE_EXCEPTIONS'] = True
@@ -26,7 +27,7 @@ def create_tables():
 
 @app.route('/')
 def hello_world():
-    return 'Hello World!'
+    return render_template('index.html')
 
 
 @app.route('/getlab/<pdf_id>')
