@@ -178,14 +178,14 @@ footer li a:hover,
   margin-top: 30px;
 }
 .dates h3 {
+  text-align: center;
   position: relative;
   display: block;
-  left: 25%;
 }
 .calendar-icon {
   position: relative;
   font-size: 300%;
-  left: 35%;
+  left: 43%;
   color: #e67e22;
   padding-bottom: 30px;
 }
