@@ -1,6 +1,6 @@
 ## Introduction to Environmental GIS
 
-This is a web app built for [Southwestern University's](https://www.southwestern.edu/) Environmental Studies department. As a result of the COVID-19 pandemic, I was granted an independent study to build a site for the Environment Studies department that works to support the upcoming courses in Geographic Information Systems. The sites guidelines were to include information about the course like lab hours, support staff information, practice labs, and education materials.
+This is a web app built for [Southwestern University's](https://www.southwestern.edu/) Environmental Studies department. As a result of the COVID-19 pandemic, I was granted an independent study to build a site for the Environment Studies department that works to support the upcoming courses in Environmental Geographic Information Systems. The sites guidelines were to include information about the course like lab hours, support staff information, practice labs, and educational materials.
 
 ## Tutorials
 
@@ -12,4 +12,4 @@ One of the labs I created is a data scavenger hunt. The students will submit the
 
 ## Progress
 
-The site was built desktop first as the students will likely use it while in class but I have made it response to Iphone 6/7/8 plus and smaller screens (portrait - max width of 375px). The site is still in development but is mostly completed and will be live soon.
+The site is responsive for all screen sizes and is live. Changes will occur periodically as I add new video tutorials and update content on the site. I want to update the way the content on the home page is generated so I can just add that information to my database instead of updating the copy in the html. 
