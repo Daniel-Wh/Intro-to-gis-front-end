@@ -86,7 +86,6 @@ header {
 .main-nav {
   float: right;
   list-style-type: none;
-  margin-right: -30%;
 }
 
 .main-nav li {
